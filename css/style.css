@@ -18,21 +18,61 @@ header nav ul li{
 }
 .items{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+
 
 }
 .polo-products{
-    margin: 40px;
-    padding: 50px;
+    margin: 10px;
+    padding: 20px;
     border: 2px solid darkblue;
     border-radius: 5px;
-    width: 30vh;
+    width: 300px;
     text-align: center;
-    height: 30vh;
 }
 .polo-image{
     width: 85%;
     height: auto;
     border-radius: 5px;
+}
+.caja–login{
+    background-color: white;
+    padding: 30px;
+    border: 2px solid navy;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+.login-titulo{
+    color: navy;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.datos{
+    margin-bottom: 15px;
+    text-align: left;
+}
+label{
+    display: block;
+    font-weight: bold;
+    color: navy;
+    margin-bottom: 5px;
+}
+input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid navy;
+    border-radius: 5px;
+}
+.boton-ingresar{
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
