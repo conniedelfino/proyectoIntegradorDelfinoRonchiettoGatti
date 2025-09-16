@@ -16,3 +16,23 @@ header{
 header nav ul li{
     list-style-type: none;
 }
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.polo-products{
+    margin: 40px;
+    padding: 50px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+    width: 30vh;
+    text-align: center;
+    height: 30vh;
+}
+.polo-image{
+    width: 85%;
+    height: auto;
+    border-radius: 5px;
+}
