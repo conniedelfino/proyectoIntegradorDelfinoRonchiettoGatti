@@ -99,7 +99,7 @@ main .secciones .aleatorios{
     padding: 20px;
     border: 2px solid darkblue;
     border-radius: 5px;
-    width: 300px;
+    width: 200px;
     text-align: center;
     background-color: rgba(242, 253, 254, 0.928);
 }
