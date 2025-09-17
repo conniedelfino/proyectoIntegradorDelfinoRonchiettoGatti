@@ -7,6 +7,30 @@
     <link rel="stylesheet" href=".//css/style.css">
 </head>
 <body>
+
+    <header>
+        <div>
+            <a href="./index.html"><img src="./css/img/ralphlauren.svg" alt="logo"></a>
+        </div>
+        
+        <div class="buscador">
+            <form action="./serch-result.html" method="get"></form>
+            <input type="text" name="buscador" value=" ">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="seleccionado"><a href="./login.html">Login</a></li>
+                <li><a href="./register.html">Register?</a></li>
+                <li><a href="./category.html">Category</a></li>
+                <li><a href="./product.html">Product?</a></li>
+                <li><a href="./serch-result.html">Serch result ?</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
 <div class="caja-login"></div>
     <h2 class="login-titulo">Iniciar Sesion</h2>
     <form action="./index.html" method="GET">
@@ -16,12 +40,16 @@
         </div>
         <div class="datos">
             <label for="password">Password</label>
-            <input id="password" type="text" name="Password" value="">
+            <input id="password" type="password" name="Password" value="">
         </div>
         <div>
             <button type="submit" class="boton-ingresar">Ingresar</button>
        </div>
     </form>
     <p class="link-registro"><a href="./register.html">No tengo cuenta</a></p>
+
+    <footer>
+        <p>Integrantes del equipo: Constanza Delfino Chevallier, Marcos Ronchietto & Juan Gatti</p>
+    </footer>
 </body>
 </html>

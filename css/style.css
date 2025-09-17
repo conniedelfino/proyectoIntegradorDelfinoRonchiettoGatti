@@ -3,39 +3,129 @@
 }
 
 body{
-    background-color: rgba(245, 250, 255, 0.765);
+    background-color: rgba(255, 255, 255, 0.386);
 }
 
 header{
-    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: rgb(254, 255, 192);
+}
+
+header img{
+    width: 100%;
+}
+
+header nav ul{
+    background-color: rgb(86, 102, 150);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    list-style-type: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.seleccionado{
+    background-color: rgb(51, 61, 91);
+}
+
+
+.categorias nav ul{
+    background-color: rgb(86, 102, 150);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.categorias nav ul li{
+    list-style-type: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.categorias nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: left;
+}
+
+main .secciones{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
 }
 
-header nav ul li{
-    list-style-type: none;
+main .secciones .masvendidos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
+
+main .secciones .aleatorios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+
 .items{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-
 }
-.polo-products{
+
+.poloproducts{
     margin: 10px;
     padding: 20px;
     border: 2px solid darkblue;
     border-radius: 5px;
     width: 300px;
     text-align: center;
+    background-color: rgba(242, 253, 254, 0.928);
 }
-.polo-image{
+
+.poloproducts img{
     width: 85%;
     height: auto;
     border-radius: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .caja–login{
     background-color: white;
     padding: 30px;
@@ -44,6 +134,7 @@ header nav ul li{
     width: 300px;
     text-align: center;
 }
+
 .login-titulo{
     color: navy;
     font-size: 24px;
@@ -51,16 +142,19 @@ header nav ul li{
     font-weight: bold;
     letter-spacing: 1px;
 }
+
 .datos{
     margin-bottom: 15px;
     text-align: left;
 }
+
 label{
     display: block;
     font-weight: bold;
     color: navy;
     margin-bottom: 5px;
 }
+
 input{
     width: 100%;
     padding: 8px;
@@ -75,4 +169,13 @@ input{
     border: none;
     border-radius: 5px;
     font-weight: bold;
+}
+
+
+
+
+
+footer{
+    background-color: brown;
+    height: 300px;
 }
