@@ -56,6 +56,10 @@ header nav ul li a{
     background-color: rgb(51, 61, 91);
 }
 
+.categorias{
+    width: 25%;
+    margin-right: 20px;
+}
 
 .categorias nav ul{
     background-color: rgb(86, 102, 150);
@@ -95,11 +99,17 @@ main .secciones{
     flex-direction: column;
 }
 
+.secciones h4{
+    font-size: 30px;
+}
+
 main .secciones .masvendidos{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    padding: 10px;
+    background-color: rgb(172, 141, 146);
 }
 
 main .secciones .aleatorios{
@@ -107,21 +117,24 @@ main .secciones .aleatorios{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    padding: 10px;
+    background-color: rgb(141, 172, 151);
 }
 
 
 .items{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .poloproducts{
     margin: 10px;
-    padding: 20px;
+    padding: 15px;
     border: 2px solid darkblue;
     border-radius: 5px;
-    width: 300px;
+    width: 250px;
     text-align: center;
     background-color: rgba(242, 253, 254, 0.928);
 }
@@ -130,39 +143,40 @@ main .secciones .aleatorios{
     width: 85%;
     height: auto;
     border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.poloproducts h2{
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.poloproducts p{
+    margin: 3px 0;
+}
+
+.poloproducts a{
+    text-decoration: none;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.caja–login{
-    background-color: white;
-    padding: 30px;
+.cajalogin{
+    background-color: rgb(233, 232, 232);
+    padding: 20px;
     border: 2px solid navy;
     border-radius: 10px;
     width: 300px;
     text-align: center;
 }
 
-.login-titulo{
+.logintitulo{
     color: navy;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-bottom: 15px;
     font-weight: bold;
-    letter-spacing: 1px;
 }
 
 .datos{
@@ -183,7 +197,7 @@ input{
     border: 1px solid navy;
     border-radius: 5px;
 }
-.boton-ingresar{
+.botoningresar{
     background-color: navy;
     color: white;
     padding: 10px;
@@ -195,9 +209,12 @@ input{
 
 
 
-
-
 footer{
-    background-color: brown;
-    height: 300px;
+    background-color: rgb(129, 95, 65);
+    height: 200px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
