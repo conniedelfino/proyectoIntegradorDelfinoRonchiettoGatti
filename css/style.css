@@ -19,7 +19,7 @@ header{
 header img{
     height: 50px;
     padding: 2px;
-    
+
 }
 
 header div{
@@ -139,6 +139,7 @@ main .secciones .aleatorios{
     width: 250px;
     text-align: center;
     background-color: rgba(242, 253, 254, 0.928);
+    border-radius: 10px;
 }
 
 .poloproducts img{
