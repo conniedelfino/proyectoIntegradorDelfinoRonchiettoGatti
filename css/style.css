@@ -97,6 +97,15 @@ main{
     
 }
 
+.mainlogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/fonditologin.avif);
+    background-size: auto;
+    height: 500px;
+}
+
 main .secciones{
     display: flex;
     flex-wrap: nowrap;
@@ -166,15 +175,10 @@ main .secciones .aleatorios{
     text-decoration: none;
 }
 
-
-
-
-
 .cajalogin{
-    background-color: rgb(233, 232, 232);
-    padding: 20px;
-    border: 2px solid navy;
-    border-radius: 10px;
+    background-color: rgba(233, 233, 232, 0.704);
+    padding: 25px;
+    border-radius: 25px;
     width: 300px;
     text-align: center;
 }
@@ -218,7 +222,7 @@ input{
 
 footer{
     background-color: rgb(129, 95, 65);
-    height: 200px;
+    height: 100px;
     color: aliceblue;
     display: flex;
     justify-content: center;
