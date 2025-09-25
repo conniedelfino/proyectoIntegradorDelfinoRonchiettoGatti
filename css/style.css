@@ -103,9 +103,11 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./img/fonditologin.avif);
-    background-size: auto;
-    height: 500px;
+    background-image: url(./img/fondoplaya.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 150px;
 }
 
 main .secciones{
