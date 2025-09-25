@@ -9,20 +9,20 @@ body{
 }
 
 .bodypatron{
-    background-image: url(./img/pattern.jpg);
+    background-image: url(./img/patron3.png);
     background-repeat: repeat;
 }
 
 header{
     display: flex;
     flex-direction: row;
-    background-color: rgba(236, 215, 195, 0.891);
+    background-color: rgb(236, 215, 195);
     padding-top: 20px;
     justify-content: space-between;
 }
 
 header div img{
-    height: 75px;
+    height: 80px;
     width: 100%;
 }
 
@@ -158,18 +158,17 @@ main .secciones{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    background-color: rgb(172, 141, 146);
 }
 
 .secciones h4{
     font-size: 30px;
-    
+    background-color: rgba(239, 228, 216, 0.755);
 }
 
 main .secciones .masvendidos{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
 }
@@ -177,9 +176,18 @@ main .secciones .masvendidos{
 main .secciones .aleatorios{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
+}
+
+.linea{
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 5px;
+    border-radius: 4px;
+    background-color: rgb(29, 27, 65);
 }
 
 
@@ -193,12 +201,11 @@ main .secciones .aleatorios{
 .poloproducts{
     margin: 10px;
     padding: 15px;
-    border: 2px solid rgba(49, 49, 121, 0.739);
+    border: 2px solid rgba(255, 255, 255, 0.685);
     border-radius: 5px;
     width: 250px;
     text-align: center;
-    background-color: rgba(230, 232, 233, 0.563);
-    border-radius: 10px;
+    background-color: rgb(212, 219, 222);
 }
 
 .poloproducts img{
@@ -312,6 +319,59 @@ label{
     font-weight: bold;
 }
 
+.mainproducto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(236, 215, 195);
+}
+
+.mainproducto .productoA{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.mainproducto .productoA div{
+    padding: 70px 20px 20px 70px;
+}
+
+.mainproducto .productoA img{
+    width: 100%;
+}
+
+
+
+
+footer{
+    background-color: rgb(151, 46, 42);
+    height: 100px;
+    color: rgb(255, 245, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.women{
+    background-color: rgb(172, 141, 146);
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 760px){
     .headerALT{
         flex-wrap: wrap;
@@ -362,16 +422,4 @@ label{
 
 }
 
-footer{
-    background-color: rgba(131, 0, 0, 0.857);
-    height: 100px;
-    color: rgb(255, 245, 240);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-}
-.women{
-    background-color: rgb(172, 141, 146);
-}
+
