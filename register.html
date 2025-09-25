@@ -36,31 +36,40 @@
         </nav>
         
     </header>
+    <main class="mainregister">
+        <div class="cajaregister">
+            <h2>Registro</h2>
+            <form action="./index.html" method="GET" class="formulario">
+                <div>
+                    <label for="email">Ingrese su email:</label>
+                    <input id="email" type="email" name="email" value="" placeholder="ejemplo@gmail.com" class="solicitudform" required>
+                </div>
+                <div>
+                    <label for="password">Ingrese una contraseña:</label>
+                    <input id="password" type="password" name="contraseña1" value="" class="solicitudform" required>
+                </div>
+                <div>
+                    <label for="password">Repetir contraseña:</label>
+                    <input id="email" type="password" name="contraseña2" value="" class="solicitudform" required>
+                </div>
+                
+                <div>
+                    <label class="terms">
+                        Acepto términos y condiciones
+                        <input type="checkbox" id="terminos" name="terminos" class="check" required>
+                    </label>
+                </div>
 
+                <div class="botonregister">
+                    <button type="submit">Registrarme</button>
+                </div>
+            </form>
 
-    <h2>Registro</h2>
-    <form action="./login.html" method="GET">
-        <div>
-            <label for="email">Email</label>
-            <input id="email" type="text" name="Email" value="">
+            <p><a href="login.html">Ya tengo una cuenta</a></p>
         </div>
-        <div>
-            <label for="password">Password</label>
-            <input id="password" type="text" name="Password" value="">
-        </div>
-        <div>
-            <label for="password">Repetir Contraseña</label>
-            <input id="email" type="text" name="Email" value="">
-        </div>
-       <div>
-            <button type="submit">Registrarme</button>
-       </div>
-       <label>
-          <input type="checkbox">Acepto términos y condiciones
-        </label>
-    </form>
+    </main>
 
-    <p><a href="login.html">Ya tengo una cuenta</a></p>
+   
 
 
     <footer>
