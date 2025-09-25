@@ -162,13 +162,11 @@ main .secciones .aleatorios{
     margin-bottom: 8px;
 }
 
-<<<<<<< HEAD
 .caja–login{
     background-color: white;
     padding: 30px;
     border: 2px solid navy;
-    border-radius: 10px;
-=======
+    border-radius: 10px;}
 .poloproducts h2{
     font-size: 16px;
     margin: 5px 0;
@@ -186,7 +184,6 @@ main .secciones .aleatorios{
     background-color: rgba(233, 233, 232, 0.704);
     padding: 25px;
     border-radius: 25px;
->>>>>>> 7eb6d1e764f4f3d7815891f757b7ba86e6aaf730
     width: 300px;
     text-align: center;
 }
@@ -224,13 +221,6 @@ input{
     border: none;
     border-radius: 5px;
     font-weight: bold;
-}
-
-
-<<<<<<< HEAD
-footer{
-    background-color: brown;
-    height: 300px;
 }
 
 @media (max-width: 760px){
@@ -282,7 +272,6 @@ footer{
     }
 
 }
-=======
 
 footer{
     background-color: rgb(129, 95, 65);
@@ -298,4 +287,3 @@ footer{
 .women{
     background-color: rgb(172, 141, 146);
 }
->>>>>>> 7eb6d1e764f4f3d7815891f757b7ba86e6aaf730
