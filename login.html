@@ -15,8 +15,10 @@
             </div>
             
             <div class="buscador">
-                <form action="./serch-result.html" method="get"></form>
-                <input type="text" name="buscador" value=" ">
+                <form action="./serch-result.html" method="get">
+                <input type="text" name="buscador" value="">
+                <button type="submit">Buscar</button>
+                </form>
             </div>
         </div>
 
@@ -33,22 +35,25 @@
         
     </header>
 
-<div class="caja-login"></div>
-    <h2 class="login-titulo">Iniciar Sesion</h2>
-    <form action="./index.html" method="GET">
-        <div class="datos">
-            <label for="email">Email</label>
-            <input id="email" type="text" name="Email" value="">
+    <main class="mainlogin">
+        <div class="cajalogin">
+            <h2 class="logintitulo">Iniciar Sesion</h2>
+            <form action="./index.html" method="GET">
+                <div class="datos">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" name="Email" value="">
+                </div>
+                <div class="datos">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="Password" value="">
+                </div>
+                <div>
+                    <button type="submit" class="botoningresar">Ingresar</button>
+            </div>
+            </form>
+            <p class="linkregistro"><a href="./register.html">No tengo cuenta</a></p>
         </div>
-        <div class="datos">
-            <label for="password">Password</label>
-            <input id="password" type="password" name="Password" value="">
-        </div>
-        <div>
-            <button type="submit" class="boton-ingresar">Ingresar</button>
-       </div>
-    </form>
-    <p class="link-registro"><a href="./register.html">No tengo cuenta</a></p>
+    </main>
 
     <footer>
         <p>Integrantes del equipo: Constanza Delfino Chevallier, Marcos Ronchietto Meilan & Juan Gatti</p>
