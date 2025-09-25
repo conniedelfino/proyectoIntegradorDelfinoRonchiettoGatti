@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: rgba(255, 255, 255, 0.386);
+    background-color: rgb(250, 241, 233);
     padding: 0;
     margin: 0;
 }
@@ -16,7 +16,7 @@ body{
 header{
     display: flex;
     flex-direction: row;
-    background-color: rgb(236, 215, 195);
+    background-color: rgb(250, 241, 233);
     padding-top: 20px;
     justify-content: space-between;
 }
@@ -226,7 +226,24 @@ main .secciones .aleatorios{
 
 .poloproducts a{
     text-decoration: none;
+    color: antiquewhite;
 }
+
+.poloproducts button{
+  background-color: rgba(214, 139, 139, 0.959);
+  border-radius: 5px;
+  color: #333333;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 8px 10px;
+  text-align: center;
+  border: 0px;
+}
+
 
 .cajalogin{
     background-color: rgba(233, 233, 232, 0.704);
@@ -326,7 +343,7 @@ label{
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background-color: rgb(236, 215, 195);
+    background-color: rgb(250, 241, 233);
 }
 
 .mainproducto .productoA{
@@ -352,10 +369,11 @@ footer{
     height: 100px;
     color: rgb(255, 245, 240);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
+    justify-content: right;
+    align-items: flex-end;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-right: 30px;
 }
 
 .women{
