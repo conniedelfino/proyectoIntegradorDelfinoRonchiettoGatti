@@ -132,22 +132,6 @@ main .secciones .aleatorios{
     border-radius: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .caja–login{
     background-color: white;
     padding: 30px;
@@ -194,10 +178,57 @@ input{
 }
 
 
-
-
-
 footer{
     background-color: brown;
     height: 300px;
+}
+
+@media (max-width: 760px){
+    .headerALT{
+        flex-wrap: wrap;
+    }
+    .header img{
+        width: 120px;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+    .buscador{
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .boton-ingresar{
+        padding: 10px 12px;
+        display: inline-block;
+    }
+    .items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .poloproducts{
+        flex: 0 0 48%;
+        max-width: 48%;
+        width: auto;
+        height: auto;
+        margin: 8px 1%;
+    }
+    .masvendidos{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .aleatorios{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .masvendidos .items, .aleatorios .items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
