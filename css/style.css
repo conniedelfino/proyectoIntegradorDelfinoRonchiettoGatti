@@ -18,8 +18,13 @@ header{
 
 header img{
     height: 50px;
+<<<<<<< HEAD
     margin-left: 30px;
     margin-top: 20px;
+=======
+    padding: 2px;
+
+>>>>>>> fba990b8b877882915effc1790783d73c66fcd01
 }
 
 header div{
@@ -61,6 +66,7 @@ header nav ul li a{
 .categorias{
     width: 25%;
     margin-right: 20px;
+    
 }
 
 .categorias nav ul{
@@ -93,6 +99,7 @@ main{
     flex-direction: row;
     align-items: flex-start;
     padding: 15px;
+    
 }
 
 .mainlogin{
@@ -108,10 +115,12 @@ main .secciones{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+    background-color: rgb(172, 141, 146);
 }
 
 .secciones h4{
     font-size: 30px;
+    
 }
 
 main .secciones .masvendidos{
@@ -148,6 +157,7 @@ main .secciones .aleatorios{
     width: 250px;
     text-align: center;
     background-color: rgba(242, 253, 254, 0.928);
+    border-radius: 10px;
 }
 
 .poloproducts img{
@@ -157,6 +167,13 @@ main .secciones .aleatorios{
     margin-bottom: 8px;
 }
 
+<<<<<<< HEAD
+.caja–login{
+    background-color: white;
+    padding: 30px;
+    border: 2px solid navy;
+    border-radius: 10px;
+=======
 .poloproducts h2{
     font-size: 16px;
     margin: 5px 0;
@@ -174,7 +191,12 @@ main .secciones .aleatorios{
     background-color: rgba(233, 233, 232, 0.704);
     padding: 50px;
     border-radius: 25px;
+<<<<<<< HEAD
     width: 450px;
+=======
+>>>>>>> 7eb6d1e764f4f3d7815891f757b7ba86e6aaf730
+    width: 300px;
+>>>>>>> fba990b8b877882915effc1790783d73c66fcd01
     text-align: center;
 }
 
@@ -214,6 +236,62 @@ input{
 }
 
 
+<<<<<<< HEAD
+footer{
+    background-color: brown;
+    height: 300px;
+}
+
+@media (max-width: 760px){
+    .headerALT{
+        flex-wrap: wrap;
+    }
+    .header img{
+        width: 120px;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+    .buscador{
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .boton-ingresar{
+        padding: 10px 12px;
+        display: inline-block;
+    }
+    .items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .poloproducts{
+        flex: 0 0 48%;
+        max-width: 48%;
+        width: auto;
+        height: auto;
+        margin: 8px 1%;
+    }
+    .masvendidos{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .aleatorios{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .masvendidos .items, .aleatorios .items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+=======
 
 footer{
     background-color: rgb(80, 46, 16);
@@ -223,4 +301,10 @@ footer{
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 10px;
+    
 }
+.women{
+    background-color: rgb(172, 141, 146);
+}
+>>>>>>> 7eb6d1e764f4f3d7815891f757b7ba86e6aaf730
