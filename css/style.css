@@ -4,22 +4,22 @@
 
 body{
     background-color: rgba(255, 255, 255, 0.386);
-    padding: 10px;
+    padding: 0;
     margin: 0;
 }
 
 header{
     display: flex;
     flex-direction: column;
-    background-color: rgb(254, 255, 192);
-    padding: 10px;
+    background-color: rgb(249, 249, 224);
+    padding: 0;
 
 }
 
 header img{
     height: 50px;
-    padding: 2px;
-    
+    margin-left: 30px;
+    margin-top: 20px;
 }
 
 header div{
@@ -172,14 +172,14 @@ main .secciones .aleatorios{
 
 .cajalogin{
     background-color: rgba(233, 233, 232, 0.704);
-    padding: 25px;
+    padding: 50px;
     border-radius: 25px;
-    width: 300px;
+    width: 450px;
     text-align: center;
 }
 
 .logintitulo{
-    color: navy;
+    color: rgb(71, 53, 0);
     font-size: 22px;
     margin-bottom: 15px;
     font-weight: bold;
@@ -193,18 +193,18 @@ main .secciones .aleatorios{
 label{
     display: block;
     font-weight: bold;
-    color: navy;
+    color: rgb(81, 59, 0);
     margin-bottom: 5px;
 }
 
 input{
     width: 100%;
     padding: 8px;
-    border: 1px solid navy;
+    border: 1px solid rgb(69, 47, 0);
     border-radius: 5px;
 }
 .botoningresar{
-    background-color: navy;
+    background-color: rgb(93, 62, 0);
     color: white;
     padding: 10px;
     width: 100%;
@@ -216,7 +216,7 @@ input{
 
 
 footer{
-    background-color: rgb(129, 95, 65);
+    background-color: rgb(80, 46, 16);
     height: 100px;
     color: aliceblue;
     display: flex;
