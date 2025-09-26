@@ -220,23 +220,21 @@ main .secciones .aleatorios{
 }
 
 .poloproducts h2{
-    font-size: 16px;
+    font-size: 18px;
+    color: rgba(38, 38, 66, 0.838);
     margin: 5px 0;
 }
 
 .poloproducts p{
     margin: 3px 0;
+    font-style: italic;
 }
 
 .poloproducts a{
-    text-decoration: none;
-    color: antiquewhite;
-}
-
-.poloproducts button{
   background-color: rgba(214, 139, 139, 0.959);
   border-radius: 5px;
-  color: #333333;
+  color: antiquewhite;
+  font-weight: bold;
   font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 10px;
   font-weight: 500;
