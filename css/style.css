@@ -9,7 +9,7 @@ body{
 }
 
 .bodypatron{
-    background-image: url(./img);
+    background-image: url('../img/patron3.png');
     background-repeat: repeat;
 }
 
@@ -136,7 +136,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./img/fondoplaya.webp);
+    background-image: url('../img/fondoplaya.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -147,7 +147,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./img/fondorelphie.jpg);
+    background-image: url('../img/fondorelphie.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -187,9 +187,8 @@ main .secciones .aleatorios{
 
 .linea{
     width: 100%;
-    margin-left: 100px;
-    margin-right: 100px;
     height: 5px;
+    margin: 0 20px 10px 20px;
     border-radius: 4px;
     background-color: rgb(48, 46, 84);
 }
@@ -472,12 +471,13 @@ main .secciones .masvendidosMujeres{
     padding: 0;
     color: pink
 }
+
 footer{
     background-color: rgb(151, 46, 42);
     height: 100px;
     color: rgb(255, 245, 240);
     display: flex;
-    justify-content: cent;
+    justify-content: center;
     align-items: center;
     text-align: center;
     padding-bottom: 10px;
@@ -495,7 +495,7 @@ footer{
 
 
 
-@media (max-width: 760px){
+@media (max-width: 450px){
     .headerALT{
         flex-wrap: wrap;
     }
