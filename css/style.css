@@ -199,7 +199,7 @@ main .secciones .aleatorios{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .poloproducts{
@@ -366,22 +366,71 @@ label{
 }
 
 
+.itemsCategory{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+main .secciones{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 80%;
+    background-color: rgba(250, 241, 233, 0.839);
+    justify-content: center;
+    align-items: center;
+}
+
+.secciones h4{
+    font-size: 30px;
+    padding: 3px;
+}
+
+main .secciones .masvendidosMujeres{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+.reviews article{
+    border: black 2px solid;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(212, 219, 222);
+    
+
+}
+.descripcion{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(13, 13, 93);
+}
+.usuario{
+    color: rgba(36, 35, 63, 0.845);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.fecha{
+    color: rgb(97, 7, 7);
+    font-family: 'Courier New', Courier, monospace;
 
 
+}
 footer{
     background-color: rgb(151, 46, 42);
     height: 100px;
     color: rgb(255, 245, 240);
     display: flex;
-    justify-content: right;
-    align-items: flex-end;
-    text-align: left;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding-bottom: 10px;
     padding-right: 30px;
-}
 
-.women{
-    background-color: rgb(172, 141, 146);
 }
 
 
