@@ -8,30 +8,32 @@
 </head>
 <body>
 
-    <header>
+    <header class="headerALT">
         <div>
-            <div>
-                <a href="./index.html"><img src="./css/img/ralphlauren.svg" alt="logo"></a>
-            </div>
-            
-            <div class="buscador">
-                <form action="./serch-result.html" method="get">
-                <input type="text" name="buscador" value="">
-                <button type="submit">Buscar</button>
-                </form>
-            </div>
+            <a href="./index.html"><img src="./css/img/ralphlauren.svg" alt="logo"></a>
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li class="seleccionado"><a href="./login.html">Login</a></li>
-                <li><a href="./register.html">Register?</a></li>
-                <li><a href="./category.html">Category</a></li>
-                <li><a href="./product.html">Product?</a></li>
-                <li><a href="./serch-result.html">Serch result ?</a></li>
-            </ul>
-        </nav>
+        <div class="derecha">
+            <div>
+                <div class="buscador">
+                    <form action="./serch-result.html" method="get">
+                    <input type="text" name="buscador" value="" placeholder="Buscar productos...">
+                    <button type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li class="seleccionado"><a href="./login.html">Login</a></li>
+                    <li><a href="./register.html">Register?</a></li>
+                    <li><a href="./category.html">Category</a></li>
+                    <li><a href="./product.html">Product?</a></li>
+                    <li><a href="./serch-result.html">Serch result ?</a></li>
+                </ul>
+            </nav>
+        </div>
         
     </header>
 
@@ -40,16 +42,16 @@
             <h2 class="logintitulo">Iniciar Sesion</h2>
             <form action="./index.html" method="GET">
                 <div class="datos">
-                    <label for="email">Email</label>
-                    <input id="email" type="text" name="Email" value="">
+                    <label for="email">Ingrese su email:</label>
+                    <input id="email" type="email" name="email" value="" class="solicitudform" required>
                 </div>
                 <div class="datos">
-                    <label for="password">Password</label>
-                    <input id="password" type="password" name="Password" value="">
+                    <label for="password">Ingrese su contraseña:</label>
+                    <input id="password" type="password" name="contraseña0" value="" class="solicitudform" required>
                 </div>
-                <div>
-                    <button type="submit" class="botoningresar">Ingresar</button>
-            </div>
+                <div class="botoningresar">
+                    <button type="submit">Ingresar</button>
+                </div>
             </form>
             <p class="linkregistro"><a href="./register.html">No tengo cuenta</a></p>
         </div>

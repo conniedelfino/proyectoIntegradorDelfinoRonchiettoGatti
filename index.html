@@ -7,32 +7,34 @@
     <link rel="stylesheet" href=".//css/style.css">
 
 </head>
-<body>
+<body class="bodypatron">
 
-     <header>
+     <header class="headerALT">
         <div>
-            <div>
-                <a href="./index.html"><img src="./css/img/ralphlauren.svg" alt="logo"></a>
-            </div>
-            
-            <div class="buscador">
-                <form action="./serch-result.html" method="get">
-                <input type="text" name="buscador" value="">
-                <button type="submit">Buscar</button>
-                </form>
-            </div>
+            <a href="./index.html"><img src="./css/img/ralphlauren.svg" alt="logo"></a>
         </div>
 
-        <nav>
-            <ul>
-                <li class="seleccionado"><a href="./index.html">Home</a></li>
-                <li><a href="./login.html">Login</a></li>
-                <li><a href="./register.html">Register?</a></li>
-                <li><a href="./category.html">Category</a></li>
-                <li><a href="./product.html">Product?</a></li>
-                <li><a href="./serch-result.html">Serch result ?</a></li>
-            </ul>
-        </nav>
+        <div class="derecha">
+            <div>
+                <div class="buscador">
+                    <form action="./serch-result.html" method="get">
+                    <input type="text" name="buscador" value="" placeholder="Buscar productos...">
+                    <button type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="seleccionado"><a href="./index.html">Home</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./register.html">Register?</a></li>
+                    <li><a href="./category.html">Category</a></li>
+                    <li><a href="./product.html">Product?</a></li>
+                    <li><a href="./serch-result.html">Serch result ?</a></li>
+                </ul>
+            </nav>
+        </div>
         
     </header>
 
@@ -58,6 +60,7 @@
         <div class="secciones">
             <section class="masvendidos">
                 <h4>Mas Vendidos</h4>
+                <div class="linea"></div>
 
                 <div class="items">
                     <div class="poloproducts">
@@ -133,14 +136,6 @@
                     </div>
 
                     <div class="poloproducts">
-                        <img src="./css/img/ropa17.avif" alt="pana de algodon">
-                        <h2>Camisa de pana de algodón</h2>
-                        <p>Polo Ralph Lauren</p>
-                        <p>$148 USD</p>
-                        <button><a href="./product.html">Ver detalle</a></button>
-                    </div>
-
-                    <div class="poloproducts">
                         <img src="./css/img/ropa6.jpg" alt="chaqueta de campo">
                         <h2>Chaqueta de campo Southland</h2>
                         <p>Polo Ralph Lauren</p>
@@ -169,6 +164,7 @@
 
             <section class="aleatorios">
                 <h4>Aleatorios</h4>
+                <div class="linea"></div>
                 <div class="items">
                     <div class="poloproducts">
                         <img src="./css/img/ropa8.avif" alt="chaqueta wyton">
@@ -189,6 +185,14 @@
                     <div class="poloproducts">
                         <img src="./css/img/ropa12.avif" alt="cargo de lona">
                         <h2>Pantalón cargo de lona</h2>
+                        <p>Polo Ralph Lauren</p>
+                        <p>$148 USD</p>
+                        <button><a href="./product.html">Ver detalle</a></button>
+                    </div>
+
+                    <div class="poloproducts">
+                        <img src="./css/img/ropa17.avif" alt="pana de algodon">
+                        <h2>Camisa de pana de algodón</h2>
                         <p>Polo Ralph Lauren</p>
                         <p>$148 USD</p>
                         <button><a href="./product.html">Ver detalle</a></button>

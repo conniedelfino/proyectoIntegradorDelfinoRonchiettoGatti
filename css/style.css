@@ -3,50 +3,85 @@
 }
 
 body{
-    background-color: rgba(255, 255, 255, 0.386);
-    padding: 10px;
+    background-color: rgb(250, 241, 233);
+    padding: 0;
     margin: 0;
+}
+
+.bodypatron{
+    background-image: url(./img/patron3.png);
+    background-repeat: repeat;
 }
 
 header{
     display: flex;
-    flex-direction: column;
-    background-color: rgb(254, 255, 192);
-    padding: 10px;
-
+    flex-direction: row;
+    background-color: rgb(250, 241, 233);
+    padding-top: 20px;
+    justify-content: space-between;
 }
 
-header img{
-    height: 50px;
-    padding: 2px;
-
+header div img{
+    height: 80px;
+    width: 100%;
 }
 
 header div{
+    padding-left: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .buscador{
     padding: 10px;
 }
 
-header nav ul{
-    background-color: rgb(86, 102, 150);
+.buscador form input{
+  background-color: #cac9c9b9;
+  color: rgb(32, 30, 40);
+  font-family: 'Times New Roman', Times, serif;
+  padding: 4px;
+  text-decoration: none; 
+  border-radius: 3px;
+  border: 0px solid rgba(0, 0, 0, 0.657);
+}
+
+.buscador form button{
+    background-color: #c3c2ca98;
+    color: rgb(32, 32, 72);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 4px;
+    text-decoration: none; 
+    border-radius: 3px;
+    border: 0px solid rgba(23, 23, 34, 0.669);
+}
+
+.derecha{
+    background-color: rgba(86, 102, 150, 0.832);
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+header .derecha nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-header nav ul li{
+header .derecha nav ul li{
     list-style-type: none;
     color: aliceblue;
     font-weight: bold;
 }
 
-header nav ul li a{
+header .derecha nav ul li a{
     text-decoration: none;
     color: aliceblue;
     font-weight: bold;
@@ -56,16 +91,16 @@ header nav ul li a{
 
 .seleccionado a{
     background-color: rgb(51, 61, 91);
+    border-radius: 50px;
 }
 
 .categorias{
-    width: 25%;
+    width: 20%;
     margin-right: 20px;
-    
 }
 
 .categorias nav ul{
-    background-color: rgb(86, 102, 150);
+    background-color: rgba(70, 85, 130, 0.895);
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -101,39 +136,62 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./img/fonditologin.avif);
-    background-size: auto;
-    height: 500px;
+    background-image: url(./img/fondoplaya.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 145px;
+}
+
+.mainregister{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/fondorelphie.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 145px;
 }
 
 main .secciones{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    background-color: rgb(172, 141, 146);
+    width: 80%;
+    background-color: rgba(250, 241, 233, 0.839);
+    justify-content: center;
+    align-items: center;
 }
 
 .secciones h4{
     font-size: 30px;
-    
+    padding: 3px;
 }
 
 main .secciones .masvendidos{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
-    background-color: rgb(172, 141, 146);
 }
 
 main .secciones .aleatorios{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
-    background-color: rgb(141, 172, 151);
+}
+
+.linea{
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 5px;
+    border-radius: 4px;
+    background-color: rgb(48, 46, 84);
 }
 
 
@@ -147,12 +205,11 @@ main .secciones .aleatorios{
 .poloproducts{
     margin: 10px;
     padding: 15px;
-    border: 2px solid darkblue;
-    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.061);
+    border-radius: 10px;
     width: 250px;
     text-align: center;
-    background-color: rgba(242, 253, 254, 0.928);
-    border-radius: 10px;
+    background-color: rgb(212, 219, 222);
 }
 
 .poloproducts img{
@@ -173,18 +230,56 @@ main .secciones .aleatorios{
 
 .poloproducts a{
     text-decoration: none;
+    color: antiquewhite;
 }
+
+.poloproducts button{
+  background-color: rgba(214, 139, 139, 0.959);
+  border-radius: 5px;
+  color: #333333;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 8px 10px;
+  text-align: center;
+  border: 0px;
+}
+
 
 .cajalogin{
     background-color: rgba(233, 233, 232, 0.704);
-    padding: 25px;
+    padding: 50px;
     border-radius: 25px;
-    width: 300px;
+    width: 450px;
     text-align: center;
 }
 
+.cajaregister{
+    background-color: rgba(233, 233, 232, 0.704);
+    padding: 50px;
+    border-radius: 25px;
+    width: 450px;
+    text-align: center;
+}
+
+.formulario{
+    text-align: left;
+}
+
+.formulario div{
+    margin-bottom: 10px;
+}
+
+.terms{
+    display: flex;
+    align-items: center;
+}
+
 .logintitulo{
-    color: navy;
+    color: rgb(71, 53, 0);
     font-size: 22px;
     margin-bottom: 15px;
     font-weight: bold;
@@ -198,18 +293,30 @@ main .secciones .aleatorios{
 label{
     display: block;
     font-weight: bold;
-    color: navy;
+    color: rgb(81, 59, 0);
     margin-bottom: 5px;
 }
 
-input{
+.check{
+    padding: 8px;
+    border: 1px solid rgb(69, 47, 0);
+    border-radius: 50px;
+}
+
+.solicitudform{
     width: 100%;
     padding: 8px;
-    border: 1px solid navy;
+    border: 1px solid rgb(10, 2, 33);
     border-radius: 5px;
 }
-.botoningresar{
-    background-color: navy;
+
+.botonregister{
+    display: flex;
+    justify-content: space-around;
+}
+
+.botonregister button{
+    background-color: rgba(51, 47, 123, 0.729);
     color: white;
     padding: 10px;
     width: 100%;
@@ -218,19 +325,123 @@ input{
     font-weight: bold;
 }
 
+.botoningresar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.botoningresar button{
+    background-color: rgba(51, 47, 123, 0.729);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.mainproducto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(250, 241, 233);
+}
+
+.mainproducto .productoA{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.mainproducto .productoA div{
+    padding: 70px 20px 20px 70px;
+}
+
+.mainproducto .productoA img{
+    width: 100%;
+}
+
+
 
 
 footer{
-    background-color: rgb(129, 95, 65);
+    background-color: rgb(151, 46, 42);
     height: 100px;
-    color: aliceblue;
+    color: rgb(255, 245, 240);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    
+    justify-content: right;
+    align-items: flex-end;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-right: 30px;
 }
+
 .women{
     background-color: rgb(172, 141, 146);
 }
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 760px){
+    .headerALT{
+        flex-wrap: wrap;
+    }
+    .header img{
+        width: 120px;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+    .buscador{
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .boton-ingresar{
+        padding: 10px 12px;
+        display: inline-block;
+    }
+    .items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .poloproducts{
+        flex: 0 0 48%;
+        max-width: 48%;
+        width: auto;
+        height: auto;
+        margin: 8px 1%;
+    }
+    .masvendidos{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .aleatorios{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .masvendidos .items, .aleatorios .items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+
