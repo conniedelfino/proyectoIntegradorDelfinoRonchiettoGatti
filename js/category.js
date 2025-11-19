@@ -4,7 +4,7 @@ fetch("https://dummyjson.com/products/categories")
         return response.json();
     })
     .then(function(data){
-        for (let i=0; i < data.length; i++){
+        for (let i = 0; i < data.length; i++){
             lista.innerHTML += <li><a href="./category.html">${data[i].name}</a></li>
         }
     })
