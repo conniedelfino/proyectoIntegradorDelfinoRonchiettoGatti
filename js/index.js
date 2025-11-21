@@ -1,6 +1,5 @@
 let urlMasVendidos = 'https://dummyjson.com/products/category/tops';
 let masVendidos = document.querySelector(".masvendidos .items");
-let h4masvendidos = document.querySelector(".h4masvendidos");
 
 fetch(urlMasVendidos)
     .then(function (response){
@@ -30,8 +29,7 @@ fetch(urlMasVendidos)
 
 
 let urlAleatorios = 'https://dummyjson.com/products/category/mens-shirts';
-let aleatorios = document.querySelector(".aleatorios");
-let h4aleatorios = document.querySelector(".h4aleatorios");
+let aleatorios = document.querySelector(".aleatorios .items");
 
 fetch(urlAleatorios)
     .then(function(response){
