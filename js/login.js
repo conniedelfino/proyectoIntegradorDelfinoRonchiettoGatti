@@ -6,15 +6,12 @@ formLogin.addEventListener("submit", function(evento){
     evento.preventDefault();
     if(emailLogin.value == ""){
         alert("¡Este campo es obligatorio!");
-    }
-    else if (contraLogin.value == ""){
+    }else if (contraLogin.value == ""){
         alert("¡Este campo es obligatorio!");
-    }
-    else if (contraLogin.vaule.length < 6){
+    }else if (contraLogin.vaule.length < 6){
         alert("La contraseña debe tener al menos 6 caracteres");
-    }
-    else{
+    }else{
         localStorage.setItem("userEmail", emailLogin.value);
-        window.location = "index.html";
+       this.submit()
     }
 });
