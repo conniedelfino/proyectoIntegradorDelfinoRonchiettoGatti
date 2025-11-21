@@ -1,5 +1,5 @@
 let urlMasVendidos = 'https://dummyjson.com/products/category/tops';
-let masVendidos = document.querySelector(".masvendidos");
+let masVendidos = document.querySelector(".masvendidos .items");
 let h4masvendidos = document.querySelector(".h4masvendidos");
 
 fetch(urlMasVendidos)
@@ -29,7 +29,7 @@ fetch(urlMasVendidos)
     });
 
 
-let urlAleatorios = 'https://dummyjson.com/products/category/men-shirt';
+let urlAleatorios = 'https://dummyjson.com/products/category/mens-shirts';
 let aleatorios = document.querySelector(".aleatorios");
 let h4aleatorios = document.querySelector(".h4aleatorios");
 
