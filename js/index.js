@@ -1,77 +1,59 @@
-let lista = document.querySelector(".categorias nav ul");
+let urlMasVendidos = 'https://dummyjson.com/products/category/tops';
+let masVendidos = document.querySelector(".masvendidos");
+let h4masvendidos = document.querySelector(".h4masvendidos");
 
-fetch("https://dummyjson.com/products/categories")
+fetch(urlMasVendidos)
     .then(function (response){
         return response.json();
     })
     .then(function (data){
-        for (let i = 0; i < data.length; i++){
-            lista.innerHTML += '<li><a href="./category.html">' + data[i] + '</a></li>';
+        console.log(data);
+        let productosMv = data.products;
+        let productoVaciosMv = [];
+        productoVaciosMv += `<h4 class="h4masVendidos">Mas Vendidos</h4>`
+        for (let i = 0; i < productosMv.length; i++){
+            productoVaciosMv += `<article class="poloproducts">
+                        <img src=${productosMv[i].thumbnail} alt="campera doble fuelle">
+                        <h2>${productosMv[i].title}</h2>
+                        <p>${productosMv[i].description}</p>
+                        <p>${productosMv[i].price}</p>
+                        <a href="./product.html"?id=${productosMv[i].id}>Ver detalle</a>
+                    </article>`
         }
+
+        masVendidos.innerHTML = productoVaciosMv;
     })
+
     .catch(function (error){
-        console.log("Error: " + error);
+        console.log(error);
     });
 
-const form = document.querySelector(".buscador form");
-const busqueda = document.querySelector('input[name="buscador"]');
 
-form.addEventListener("submit", function(event){
-    event.preventDefault();
+let urlAleatorios = 'https://dummyjson.com/products/category/men-shirt';
+let aleatorios = document.querySelector(".aleatorios");
+let h4aleatorios = document.querySelector(".h4aleatorios");
 
-    if (busqueda.value == ""){
-        alert("LLenar Campo Obligatorio");
-    } else if (busqueda.value.length < 3){
-        alert("Ingrese como minimo 3 caracteres");
-    } else{
-        this.submit();
-    }
-});
-
-let categoria1 = "tops"
-let contenedor1 = document.querySelector(".masvendidos .items");
-
-fetch("https://dummyjson.com/products/category/" + categoria1)
+fetch(urlAleatorios)
     .then(function(response){
         return response.json();
     })
     .then(function(data){
-        let productos = data.products;
-        for (let i = 0; i < 10; i++){
-            contenedor1.innerHTML += 
-            '<article class="poloproducts">' +
-                '<img src="' + productos[i].thumbnail + '">' +
-                '<h2>' + productos[i].title + '</h2>' +
-                '<p>' + productos[i].brand + '</p>' +
-                '<p>$' + productos[i].price + ' USD</p>' +
-                '<a href="./product.html?id=' + productos[i].id + '">Ver detalle</a>' +
-            '</article>';
-     }
+        console.log(data);
+        let productosA = data.products;
+        let productoVacioA = [];
+        productoVacioA += `<h4 class="h4aleatorios">Aleatorios</h4>`
+        for (let i = 0; i < productosA.length; i++){
+            productoVacioA += ` <article class="poloproducts">
+                        <img src=${productosA[i].thumbnail} alt="chaqueta wyton">
+                        <h2>${productosA[i].title}</h2>
+                        <p>${productosA[i].description}</p>
+                        <p>${productosA[i].price}</p>
+                        <a href="./product.html"?id=${productosA[i].id}>Ver detalle</a>
+                    </article>`
+        }
+        aleatorios.innerHTML = productoVacioA;
+
      })
      .catch(function(error){
-        console.log("Error: " + error);
-    })
-
-    let categoria2 = "mens-shirts"
-    let contenedor2 = document.querySelector(".aleatorios .items");
-
-fetch("https://dummyjson.com/products/category/" + categoria2)
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(data){
-        let productos = data.products;
-        for (let i = 0; i < 10; i++){
-            contenedor2.innerHTML += 
-            '<article class="poloproducts">' +
-                '<img src="' + productos[i].thumbnail + '">' +
-                '<h2>' + productos[i].title + '</h2>' +
-                '<p>' + productos[i].brand + '</p>' +
-                '<p>$' + productos[i].price + ' USD</p>' +
-                '<a href="./product.html?id=' + productos[i].id + '">Ver detalle</a>' +
-            '</article>';
-     }
-     })
-     .catch(function(error){
-        console.log("Error: " + error);
+        console.log(error);
     })
