@@ -10,7 +10,7 @@ formLogin.addEventListener("submit", function(evento){
     else if (contraLogin.value == ""){
         alert("¡Este campo es obligatorio!");
     }
-    else if (contraLogin.vaule.length < 6){
+    else if (contraLogin.value.length < 6){
         alert("La contraseña debe tener al menos 6 caracteres");
     }
     else{
