@@ -1,12 +1,9 @@
-window.addEventListener("load", function(){
-
-   
     let nombreUsuario = localStorage.getItem("emailUsuario");
-    let linkLogin = document.querySelector(".login_b");
-    let linkRegistro = document.querySelector(".register_b");
-    let header = document.querySelector(".listanavegador");
+    let linkLogin = document.querySelector(".loginB");
+    let linkRegistro = document.querySelector(".registerB");
+    let navheader = document.querySelector(".navHead");
 
-    if (nombreUsuario != null){
+    if (nombreUsuario){
 
         linkLogin.style.display = "none";
         linkRegistro.style.display = "none";
@@ -14,5 +11,4 @@ window.addEventListener("load", function(){
         header.innerHTML += `<li class= "elementosheader saludo" >bienvenido: ${nombreUsuario}</li>`
          header.innerHTML += `<li class= elementosheader logout><a href = "#">LOGOUT</a></li>`;
 
-    }
-});
+    };

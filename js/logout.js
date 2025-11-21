@@ -1,7 +1,7 @@
 window.addEventListener("load", function(){
     let email = localStorage.getItem("emailUsuario");
     let saludo = document.querySelector(".saludoUser");
-    let botonLogaut = document.querySelector(".logout");
+    let botonLogout = document.querySelector(".logout");
     let loginItem = document.querySelector(".loginItem");
     let registerItem = document.querySelector(".registerItem");
 
