@@ -9,6 +9,6 @@
         linkRegistro.style.display = "none";
 
         header.innerHTML += `<li class= "elementosheader saludo" >bienvenido: ${nombreUsuario}</li>`
-         header.innerHTML += `<li class= elementosheader logout><a href = "#">LOGOUT</a></li>`;
+        header.innerHTML += `<li class= elementosheader logout><a href = "#">LOGOUT</a></li>`;
 
     };
