@@ -1,20 +1,18 @@
 window.addEventListener("load", function(){
 
    
-   let email = localStorage.getItem("emailUsuario");
-    let saludo = document.querySelector(".saludoUser");
-    let botonLogaut = document.querySelector(".logout");
-    let loginItem = document.querySelector(".loginItem");
-    let registerItem = document.querySelector(".registerItem");
+    let nombreUsuario = localStorage.getItem("emailUsuario");
+    let linkLogin = document.querySelector(".login_b");
+    let linkRegistro = document.querySelector(".register_b");
+    let header = document.querySelector(".listanavegador");
 
-    if (email != null){
+    if (nombreUsuario != null){
 
-        saludo.innerHTML = "Bienvenido" + email
-        saludo.style.display = "block";
+        linkLogin.style.display = "none";
+        linkRegistro.style.display = "none";
 
-        botonLogout.style.display = "Block";
-        loginItem.style.display = "none";
-        registerItem.style.display = "none";
+        header.innerHTML += `<li class= "elementosheader saludo" >bienvenido: ${nombreUsuario}</li>`
+         header.innerHTML += `<li class= elementosheader logout><a href = "#">LOGOUT</a></li>`;
 
     }
 });
