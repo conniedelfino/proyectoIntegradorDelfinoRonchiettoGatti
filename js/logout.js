@@ -1,10 +1,17 @@
 window.addEventListener("load", function(){
-    let botonLogaut = document.querySelector(".botonLogaout")
-    botonLogaut.addEventListener("click", function(){
-        localStorage.clear();
-        let user = document.querySelector(".saludoUser")
-        user.style.display = "none";
-        let userNave = document.querySelector(".navUserLogout")
-        userNave.style.display = "none";
+    let email = localStorage.getItem("emailUsuario");
+    let saludo = document.querySelector(".saludoUser");
+    let botonLogaut = document.querySelector(".logout");
+    let loginItem = document.querySelector(".loginItem");
+    let registerItem = document.querySelector(".registerItem");
+
+    botonLogout.addEventListener("click", function(){
+        localStorage.removeItem("email.Usuario");
+        
+        saludo.style.display = "none";
+        botonLogout.style.display = "none";
+
+        loginItem.style.display = "block";
+        registerItem.style.display = "block";
     })
 })
