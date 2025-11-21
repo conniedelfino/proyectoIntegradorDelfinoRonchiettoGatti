@@ -4,9 +4,9 @@ let contraLogin = document.querySelector("#password");
 
 formLogin.addEventListener("submit", function(evento){
     evento.preventDefault();
-    if(emailLogin.value == ""){
+    if(emailLogin.value==""){
         alert("¡Este campo es obligatorio!");
-    }else if (contraLogin.value == ""){
+    }else if (contraLogin.value==""){
         alert("¡Este campo es obligatorio!");
     }
     else if (contraLogin.value.length < 6){

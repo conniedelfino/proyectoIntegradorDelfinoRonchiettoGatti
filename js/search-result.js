@@ -51,7 +51,7 @@ if(buscador == null){
     let productos = data.products;
     let contenido = "";
 
-    contenido += `<h4> Resultados encontrados para su busqueda: " + buscador +"</h4>`;
+    contenido += "<h4> Terminos encontrados para su busqueda: " + buscador + "</h4>"
     contenido += `<div class = linea ></div>`
     if (productos.length == 0){
         contenido += "<p> No hay resultados para el termino: " + buscador + "</p>"
