@@ -14,7 +14,7 @@
 
             navHeadUl.innerHTML += `
             <li class="saludoUser">Bienvenido: ${userEmail}</li>
-            <li class="logout"><a href="logoutLink">Logout</a></li>
+            <li class="logoutItem"><a href="#" class="logoutLink">Logout</a></li>
             `;
 
         }

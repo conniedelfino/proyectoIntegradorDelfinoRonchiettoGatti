@@ -5,7 +5,6 @@ window.addEventListener("load", function(){
         evento.preventDefault();
         localStorage.removeItem("userEmail");
         window.location.href = "./index.html";
-    })
-
+    });
 
 });
