@@ -11,11 +11,14 @@
         if(userEmail){
             linkLogin.style.display = "none";
             linkRegistro.style.display = "none";
+
             navHeadUl.innerHTML += `
-            <li class="saludo">Bienvenido: ${userEmail}</li>
-            <li class="logout"><a href="./product.html">Logout</a></li>
+            <li class="saludoUser">Bienvenido: ${userEmail}</li>
+            <li class="logout"><a href="logoutLink">Logout</a></li>
             `;
 
         }
 
     });
+
+    

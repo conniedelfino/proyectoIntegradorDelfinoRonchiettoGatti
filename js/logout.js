@@ -1,17 +1,11 @@
 window.addEventListener("load", function(){
-    let email = localStorage.getItem("emailUsuario");
-    let saludo = document.querySelector(".saludoUser");
-    let botonLogout = document.querySelector(".logout");
-    let loginItem = document.querySelector(".loginItem");
-    let registerItem = document.querySelector(".registerItem");
+    let botonLogout = document.querySelector(".logoutLink");
 
-    botonLogout.addEventListener("click", function(){
-        localStorage.removeItem("email.Usuario");
-        
-        saludo.style.display = "none";
-        botonLogout.style.display = "none";
-
-        loginItem.style.display = "block";
-        registerItem.style.display = "block";
+    botonLogout.addEventListener("click", function (evento){
+        evento.preventDefault();
+        localStorage.removeItem("userEmail");
+        window.location.href = "./index.html";
     })
-})
+
+
+});
